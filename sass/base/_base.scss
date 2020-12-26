@@ -1,0 +1,114 @@
+/* =========================================
+                Html, Body
+============================================ */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+// Default padding 
+.default-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.bg-gray {
+    background-color: $color-bg-gray;
+}
+.button-area button{
+    background-color: $color-alizarin;
+    padding: 15px 32px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:focus {
+        outline: none;
+    }
+}
+#default-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+section {
+    background: #fff;
+    overflow: hidden;
+}
+.site-heading {
+    margin-bottom: 30px;
+    h3 {
+        color: $color-alizarin;
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-family: 'Dancing Script', cursive;
+    }
+    h2 {
+        font-weight:700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        position: relative;
+        &::after {
+            content: "";
+            width: 22px;
+            height: 2px;
+            background: red;
+            position: absolute;
+            top: 46px;
+            left: 340px;
+        }
+        &::before {
+            content: "";
+            width: 22px;
+            height: 2px;
+            background: red;
+            position: absolute;
+            top: 46px;
+            left: 370px;
+        }
+    }
+    p {
+        color: $color-dim-gray;
+        margin-bottom: 40px;
+    }
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }

@@ -1,0 +1,148 @@
+/**=========   Css for About      ========**/
+.about-area {
+    .about-items{
+        .info{
+            h3{
+                color: $color-dim-gray;
+                font-weight: 700;
+                font-family: Dancing Script;
+                margin-bottom: 15px;
+                font-size: 50px;
+            }
+            h2{
+                line-height: 1.4;
+                margin-bottom: 18px;
+                font-weight: 500;
+            }
+            p{
+                color: $color-dim-gray;
+                line-height: 25px;
+                font-weight: 400;
+                font-size: 14px;
+                
+            }
+            ul{
+                border: 1px solid $color-gainsboro;
+                padding: 0px;
+                margin-top: 30px;
+                &.flex-container{
+                    display: flex;
+                    flex-direction: row;
+                }
+                li{
+                    width: 50%;
+                    border-right: 1px solid $color-gainsboro;
+                    padding: 6px 0px 8px 18px;
+                    &:last-child{
+                        border: none;
+                    }
+                }
+                
+            }  
+            .icon {
+                color: $color-alizarin;
+                font-size: 40px;
+            }  
+            .icon, .info-address {
+                display: table-cell;
+                vertical-align: top;
+            }
+            .info-address {
+                padding-left: 15px;
+                h4 {
+                    margin-top: 12px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin-bottom: 4px;
+                }
+                span {
+                    color: $color-dim-gray;
+                }
+            }
+            
+        }
+    }
+    .form-box {
+    -moz-box-shadow: 0 0 10px rgba($color-black, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba($color-black, 0.1);
+    -o-box-shadow: 0 0 10px rgba($color-black, 0.1);
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+    background: $color-white;
+    padding: 70px 40px 40px 40px;
+    h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    input{
+        border-radius: 0;
+        border: 1px solid #d2cece;
+        text-align: center;
+        padding: 24px;
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    .icon {
+        -moz-box-shadow: 0 0 10px rgba($color-black, 0.1);
+        -webkit-box-shadow: 0 0 10px rgba($color-black, 0.1);
+        -o-box-shadow: 0 0 10px rgba($color-black, 0.1);
+        box-shadow: 0 0 10px rgba($color-black, 0.1);
+        background: $color-white;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        position: absolute;
+        top: -40px;
+        left: 190px;
+    }
+    svg{
+        color: $color-alizarin;
+        margin: 31px 31px;
+        font-size: 26px;
+    } 
+    button {
+        background: $color-alizarin;
+        padding: 12px 30px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-white;
+        border: none;
+        border-radius: 4%;
+        transition: all 0.5s ease-in-out;
+        margin-top: 16px;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            border: 2px solid $color-alizarin;
+            background: none;
+            color: $color-dim-gray;
+        }
+    }
+    .form-control{
+        &.select-change {
+            text-align: center !important;
+            width: 100%;
+            margin-bottom: 18px;
+            border-radius: 0;
+            border: 1px solid #d2cece;
+            
+            &:focus{
+                box-shadow: none;
+                outline: none;
+                color: $color-dim-gray;
+            }
+            &:hover {
+                color: $color-dim-gray;
+            }
+            .list {
+                width: 100%;
+            }
+        }
+    }
+    }
+}

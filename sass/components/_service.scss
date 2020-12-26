@@ -1,0 +1,103 @@
+/******* Css for Services  *******/
+.services-area {
+    .owl-theme .owl-dots .owl-dot span {
+        display: none;
+    }
+    .services-items {
+        // padding: 8px 0px 42px 0px;
+    
+        .item {
+            padding: 0px 0px 10px 0px;
+            &.bg-cover {
+                background-position: center center !important;
+                background-size: cover !important;
+            }
+        }
+        .box {
+            padding: 40px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            svg {
+                color: #e7272d;
+                border-radius: 50%;
+                margin: 18px 0px 34px 0px;
+                background: white;
+                width: 140px;
+                height: 140px;
+                font-size: 50px;
+                padding: 42px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 472%;
+                width: 100%;
+                left: 0;
+                background: #000000;
+                z-index: -1;
+                top: 0;
+                opacity: 0.5;
+
+            }
+        }
+        h4 {
+            font-weight: 700;
+            font-size: 22px;
+            color: $color-white;
+        }
+        p {
+            color: $color-bg-gray; 
+        }
+
+    }
+}
+// @keyframes myanimation {
+//     0% {
+//         opacity: .5;
+//         background: #ffffff;
+//     }
+//     30% {
+//         opacity: .6;
+//         background: #ffffff; 
+//     }
+//     50% {
+//         opacity: .8;
+//         background: #ffffff; 
+//     }
+//     80% {
+//         opacity: .9;
+//         background: #ffffff; 
+//     }
+//     100% {  opacity: 1;
+//         background: #ffffff; background: #ffffff;}
+//   }
+
+// position: relative;
+//             z-index: 1;
+//             text-align: center;
+//             margin: 90px 0px 10px 0px;
+//             -moz-box-shadow: 0 0 5px 1px lightgrey;
+//             -webkit-box-shadow: 0 0 5px 1px lightgrey;
+//             -o-box-shadow: 0 0 5px 1px lightgrey;
+//             box-shadow: 0 0 5px 1px lightgrey;
+//             transition: all 0.35s ease-in-out;
+//             -webkit-transition: all 0.35s ease-in-out;
+//             -moz-transition: all 0.35s ease-in-out;
+//             -ms-transition: all 0.35s ease-in-out;
+//             -o-transition: all 0.35s ease-in-out;
+//             // animation: myanimation 5s infinite;
+//             padding: 60px 10px 60px 10px;
+//             &::after {
+//                 position: absolute;
+//                 left: 0;
+//                 top: 0;
+//                 content: "";
+//                 height: 100%;
+//                 width: 100%;
+//                 background: #ffffff;
+//                 z-index: -1;
+//                 border: 1px solid rgba(255, 255, 255, 0.9);
+                
+//             }

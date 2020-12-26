@@ -1,0 +1,111 @@
+.blog-area {
+.blog-items {
+.single-item {
+    .thumb {
+        position: relative;
+        img {
+            width: 556px;
+            height: 331px;
+        }
+        .meta {
+            position: absolute;
+            position: absolute;
+            top: 280px;
+            left: 20px;
+            .tags {
+                padding: 0px;
+                a{
+                    color: $color-white;
+                   
+                }
+            } 
+            ul {
+                margin-left: 270px;
+                text-align: right;
+                margin-top: -25px;
+                li {
+                    display: inline-block;
+                    a{
+                        color: $color-white;
+                        padding: 0px 0px 0px 8px;
+                    }
+                }
+            }   
+        }
+        .info {
+            padding: 30px;
+            h3 {
+                a {
+                    color: black;
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            a {
+
+            }
+           
+            .button-area-blog button {
+                background: #fff;
+                border: none;
+                border: 2px solid $color-alizarin;
+                padding: 10px 40px 10px 40px;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: all 0.5s ease-in-out;
+                    &:hover {
+                        background: $color-alizarin;
+                        color: $color-white;
+                    }
+                }
+           
+            
+        }
+    }
+    &.flex {
+        .thumb {
+            img {
+                width: 258px;
+                height: 249px;
+                margin-bottom: 70px;
+            }
+        }
+        
+    } 
+}
+}
+}
+.info {
+    .meta {
+        ul {
+            list-style: 0;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                a {
+                    color: $color-dim-gray;
+                    margin-bottom: 15px;
+                    display: block;
+                }
+            }
+        }
+    }
+    h4 {
+        a {
+            color: black;
+            font-size: 21px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+}
+.border-changes {
+    border-bottom: 1px solid $color-gainsboro;
+    width: 527px;
+    position: absolute;
+    top: 285px;
+}

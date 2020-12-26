@@ -1,0 +1,167 @@
+.f-items{
+    padding: 64px 0px 64px 0px;
+    .f-item {
+        &.link, &.opening-hours,  &.inst-feed {
+            h4 {
+                color: $color-white;
+                text-transform: uppercase;
+            }
+        } 
+        &.address {
+            img {
+                margin: 0px 0px 25px -12px;
+            }
+            p {
+                color: $color-gainsboro;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    color: $color-white;
+                    margin-top: 6px;
+                    a {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        &.link {
+           
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    padding: 10px;
+                    a {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        &.opening-hours {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    color: $color-white;
+                    border-bottom: 1px solid $color-bg-gray;
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    padding-bottom: 30px;
+                    clear: both;
+                    margin: 14px 0px 14px 0px;
+                    &:last-child{
+                        border: none;
+                    }
+                    span {
+                        float: left;
+                    }
+                    .pull-right {
+                        float: right;
+                        &.closed {
+                            background: $color-alizarin;
+                            padding: 4px 8px;
+                            border-radius: 4px; 
+                        }
+                    }
+                }
+            }
+            
+        }
+        &.inst-feed {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    float: left;
+                    padding: 10px 10px 0px 0px;
+                    width: 33.33%;
+                    box-sizing: border-box;
+                    a {
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                        overflow: hidden;
+                        img {
+                            min-height: 70px;
+                            width: 100%;
+                        
+                        }
+                        &::before {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            content: "\f16d";
+                            z-index: 1;
+                            transform: translate(-50%, -50%);
+                            -webkit-transform: translate(-50%, -50%);
+                            -moz-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            -o-transform: translate(-50%, -50%);
+                            font-family: "Font Awesome 5 Brands";
+                            opacity: 0;
+                            transition: all 0.35s ease-in-out;
+                            -webkit-transition: all 0.35s ease-in-out;
+                            -moz-transition: all 0.35s ease-in-out;
+                            -ms-transition: all 0.35s ease-in-out;
+                            -o-transition: all 0.35s ease-in-out;
+                        }
+                        &::after {
+                            content: "";
+                            background: $color-alizarin;
+                            position: absolute;
+                            left: -100%;
+                            top: 0;
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0.7;
+                            transition: all 0.35s ease-in-out;
+                            -webkit-transition: all 0.35s ease-in-out;
+                            -moz-transition: all 0.35s ease-in-out;
+                            -ms-transition: all 0.35s ease-in-out;
+                            -o-transition: all 0.35s ease-in-out;
+                            
+                        }
+                        &:hover::after {
+                            left: 0;
+                        }
+                        &:hover::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+/*======== css for footer-bottom =========*/
+.footer-bottom {
+    border-top: 1px solid $color-black-primary1;
+    padding: 30px 0px 10px 0px;
+    p {
+       color: $color-dim-gray; 
+    }
+    a {
+        text-align: none;
+        color: $color-white; 
+        text-transform: uppercase;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            a {
+                color: $color-white;
+            }
+        }
+    }
+}

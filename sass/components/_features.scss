@@ -1,0 +1,36 @@
+/*Css for features*/
+.features-items {
+    .single-item {
+        border-right: 1px solid $color-gainsboro;
+        .item {
+            padding:30px;
+            svg {
+                color: $color-alizarin;
+                font-size: 60px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                display: inline-block;    
+                transition: all .5s ease-in-out;
+                &:hover{
+                    transform: translateY(-10px);
+                }
+            }
+           h4{
+               margin-bottom: 15px;
+               font-weight: 600;
+               text-transform: capitalize;
+           }
+            p{
+                color: $color-dim-gray;
+            }
+        }
+    } 
+        
+    .single-item:last-child{
+        border: none;
+        text-align: left;
+    }
+    .single-item:first-child{
+        text-align: right;
+    }
+}   

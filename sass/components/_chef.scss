@@ -1,0 +1,98 @@
+.chef-area {
+    .info {
+        padding: 70px 30px 30px 30px;
+        text-align: center;
+        border: 1px solid #e7e7e7;
+    }
+    .site-heading {
+
+    }
+    .chef-items {
+        .single-item {
+            .item {
+                -moz-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+                -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+                -o-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+                box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+                background: #ffffff;
+                .thumb {
+                    img {
+                        width: 349px;
+                        height: 320px;
+                    }
+                }
+                .info {
+                    position: relative;
+                    
+                    .overlay {
+                        position: absolute;
+                        background: $color-white;
+                        width: 80%;
+                        padding: 20px;
+                        border-radius: 5px 5px 0px 0px;
+                        top: -28%;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        display: block;
+                        text-align: center;
+                        h4 {
+                            color: $color-dim-gray;
+                            color: #666666;
+                            font-size: 22px;
+                            margin-bottom: 18px;
+                            font-weight: 600;
+                           
+                        }
+                        span {
+                            color: $color-alizarin;
+                            border: 1px solid $color-gainsboro;
+                            padding: 4px 30px 4px 30px;
+                            border-radius: 20px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            font-size: 13px;
+                        }
+                        
+                    }
+                    .content {
+                        border-top: 1px solid #E7E7E7;
+                        padding-top: 24px;
+                        p {
+                        
+                        }
+                        ul {
+                            text-align: center;
+                            transform: translate(-21px, 0px);
+                            li {
+                                display: inline-block;
+                                padding: 7px 7px 0px 7px;
+                                
+                                &.facebook {
+                                    a{
+                                        color: #3b5998;
+                                    }
+                                }
+                                &.twitter {
+                                    a {
+                                        color: #1da1f2;
+                                    }
+                                }
+                                &.pinterest {
+                                    a {
+                                        color: #bd081c;
+                                    
+                                    }
+                                }
+                                &.linkedin {
+                                    a {
+                                        color: #0077b5;;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

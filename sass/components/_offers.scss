@@ -1,0 +1,73 @@
+/*******   css for Offers************/
+.offer-area {
+    .offer-items {
+        position: relative;
+        img{
+            width: 630px;
+            height: 500px;
+        }
+        .price {
+            background-color: $color-white;
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            top: 48px;
+            left: 86%;
+            border-radius: 50%;
+            padding: 25px 0px 0px 28px;
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+           h4 {
+            color: $color-alizarin;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+           }
+           span {
+            display: block;
+            font-weight: normal;
+            color: black;
+            padding: 6px;
+           }
+        }
+        .info {
+            padding: 82px 70px 0px 33px;
+            h3 {
+                color: $color-dim-gray;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            span {
+                color: $color-dim-gray;
+                margin-bottom: 15px;
+                display: block;
+            }
+            p {
+                color: $color-dim-gray;
+                margin-bottom: 40px;
+            }
+            .btn-dark {
+                border: 2px solid $color-black;
+                background: transparent;
+                border-radius: 0;
+                padding: 12px 38px 12px 38px;
+                color: $color-black;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: all 1s ease-in-out;
+                &:hover {
+                    background: $color-black;
+                    color: $color-white;
+                }
+
+            }
+        }
+    }
+}
